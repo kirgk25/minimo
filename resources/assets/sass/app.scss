@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+// Bootstrap scss:
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+//Font-Awesome
+@import "./font-awesome/font-awesome.scss";
+
+@import "additional-fonts.scss";
+@import "additional-mixins.scss";
+@import "additional-common.scss";
+@import "additional-main.scss";

@@ -1,0 +1,378 @@
+* {
+    font-family: PlayfairDisplay;
+    font-size: 17.8px !important;
+}
+
+body {
+    @media only screen and (min-width: $screen-sm-max){
+        padding-top: 76px;
+    }
+}
+
+h1{
+    font-size: 38px !important;
+    margin-top: 25px;
+    margin-bottom: 41px;
+}
+
+h2{
+    font-size: 30px !important;
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+
+p{
+    line-height: 31px;
+}
+
+
+input {
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:   $placeholder-color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    $placeholder-color;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    $placeholder-color;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    $placeholder-color;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    $placeholder-color;
+}
+
+a {
+    color: #c6c6c6;
+    &:hover {
+        color: #616161;
+        text-decoration: none;
+    }
+    .post-desc > & {
+        &, &:hover {
+            color: inherit;
+        }
+    }
+}
+
+blockquote {
+    border-left: none;
+    font-style: italic;
+    margin: 55px 0;
+    line-height: 1.75;
+}
+
+.navbar, .main-pic-cont{
+    padding: 0 6%;
+    z-index: 2;
+}
+
+.com-pad-1 {
+    padding: 0 12.5%;   
+}
+
+.com-pad-2 {
+    padding-left: 12.5%;
+    padding-right: 6%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 0;
+}
+
+.navbar-brand {
+	font-family: Inconsolata !important;
+	color: black !important;
+	font-size: 37px !important;
+    letter-spacing: 8px;
+}
+
+.navbar-minimo {
+    font-size: 18px !important;
+    border-top-color: white;
+    @media only screen and (max-width: $screen-sm-max){
+        position: fixed;
+        width: 100%;
+    }
+}
+
+.affix {
+    @media only screen and (min-width: $screen-md-min){
+        top: 0;
+        width: 100%;
+        + * {
+            padding-top: 76px;
+        }
+    }
+}
+
+.main-pic {
+    width: 100%;
+    margin-top: 58px;
+    margin-bottom: 120px;
+    @media only screen and (max-width: $screen-sm-max){
+        margin-top: 75px;
+    }
+}
+
+.style-1 {
+    font-family: Ubuntu !important;
+    color: #b4ad9e;
+}
+
+.send-comment{
+    margin-top: 54px;
+    margin-bottom: 14px;
+}
+
+.post-desc{
+    @media only screen and (min-width: $screen-md-min){
+        $post-half-pad: 3.4%;
+        &:nth-child(2n+1){
+            padding-right: $post-half-pad;
+        }
+        &:nth-child(2n){
+            padding-left: $post-half-pad;
+        }
+    }
+}
+
+.post-desc-pic {
+    display: inline-block;
+    background: center/cover no-repeat;
+    height: 355px;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 28px;
+}
+
+.post-full-pic {
+    width: 100%;
+    margin-top: 65px;
+}
+
+.sign-up, .like-post-gr, .comment-block {
+    padding-top: 79px;
+    padding-bottom: 105px;
+}
+
+.sign-up {
+    margin-top: 139px;
+    margin-bottom: -20px;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+}
+
+.like-post-gr {
+    background-color: #f0f0f0;
+}
+
+.like-post {
+
+    @media only screen and (min-width: $screen-md-min){ 
+        width: 30%;
+        &:nth-child(2n + 1) {
+            margin: 0 5%;
+        }
+    }
+
+}
+
+.like-post-pic {
+    display: inline-block;
+    background: center/cover no-repeat;
+    width: 100%;
+    height: 231px;
+    margin-top: 35px;
+    margin-bottom: 17px;
+}
+
+.like-post-name {
+    font-size: 25px !important;
+}
+
+.load-more{
+    $in-col: #626262;
+    border: 1px solid $in-col;
+    color: $in-col;
+    font-family: PlayfairDisplay;
+    display: block;
+    text-align: center;
+    width: 208px;
+    margin: 0 auto;
+    font-size: 25px !important;
+    height: 77px;
+    padding-top: 17px;
+    margin-top: 194px;
+    margin-bottom: 176px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.sign-up-bordered-bottom-block{
+    border-bottom: 1px solid black;
+    padding-left: 3px;
+    margin-top: 51px;
+}
+
+.sign-up-mail, .send-let{
+    margin: 10px 0;
+    height: 29px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.sign-up-mail {
+    float: left;
+    width: 81%;
+}
+
+.send-let{
+    width: 39px;
+    background: center/contain no-repeat url("../img/send-letter.png");
+    max-width: 19%;
+}
+
+.footer{
+    background-color: #f0f0f0;
+}
+
+.fa {
+    padding: 0 8px;
+    font-size: 23px !important;
+}
+
+.footer-links{
+    padding-top: 47px;
+    padding-bottom: 47px;
+    &:nth-child(1){
+        @media only screen and (min-width: $screen-sm-min){
+            float: left;
+        }
+    }
+    &:nth-child(2){
+        @media only screen and (min-width: $screen-sm-min){
+            float: right;
+        }
+    }
+}
+
+.link-pad-right {
+    padding-right: 16px;
+}
+
+.post-full-share-block {
+    padding: 82px 0;
+}
+
+.comment-avatar {
+    width: 87px;
+    height: 87px;
+    display: inline-block;
+    background: center/cover no-repeat;
+    border-radius: 50%;
+    padding-top: 4px;
+    font-size: 48px !important;
+    color: white;
+    text-align: center;
+}
+
+.comment-avatar-active {
+    background-color: #cce5e1;
+}
+
+.comment-avatar-wait {
+    background-color: #ededeb;
+}
+
+.comment-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.comment-text {
+    margin-bottom: 21px;
+}
+
+.comment-new {
+    resize: none;
+    width: 100%;
+    border-radius: 6px;
+    padding: 3% 4.7%;
+    height: 90px;
+    border: 2px solid #cce5e1;
+}
+
+.media-left {
+    padding-top: 10px;
+}
+
+.media-body {
+    padding-left: 3.3%;
+}
+
+.media {
+    margin-top: 50px;
+    &:first-of-type {
+        margin-top: 40px;
+    }
+}
+
+.connect-block {
+    padding-top: 32px;
+}
+
+.connect-with {
+    padding-right: 32px;
+    display: inline-block;
+}
+
+.sidebar-right {
+    padding-left: 5%;
+    padding-bottom: 65px;
+    >.style-1 {
+        padding-left: 10px;
+    }
+    > p {
+        font-size: 15px !important;
+        line-height: 1.75;
+    }
+    >a>.fa {
+        padding-left: 0;
+        padding-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 90px;
+    }
+    >ul {
+        margin-top: 37px;
+        padding: 0;
+        padding-left: 33px;
+        padding-bottom: 57px;
+        >li {
+            font-size: 10px; /* only for list-style-type */
+            padding-left: 17px;
+            &:not(:last-child){
+                padding-bottom: 33px;
+            }
+            >span {
+                font-size: 20px !important;
+                >.com-num {
+                    font-size: 15px !important;
+                    padding-top: 13px;
+                }
+            }
+        }
+    }
+}
